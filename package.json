@@ -1,0 +1,16 @@
+{
+  "name": "kone",
+  "version": "1.0.0",
+  "description": "Kone hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "nodemon": "^1.12.1"
+  }
+}
