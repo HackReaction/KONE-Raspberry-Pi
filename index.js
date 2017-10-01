@@ -1,8 +1,17 @@
 const app = require('express')();
 const port = process.env.PORT || 4000;
+
 const utils = require('./controllers/index.js');
 
-app.use('/compare', utils.compare);
+app.use('/staticFigures', utils.staticFigures);
+
+app.use('/chair', utils.stair);
+
+app.use('/concrete', utils.concrete);
+
+
+
+
 
 app.listen(port, (err) => {
   if (err) {

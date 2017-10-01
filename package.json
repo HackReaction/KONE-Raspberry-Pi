@@ -4,13 +4,16 @@
   "description": "Kone hackathon",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.1",
-    "nodemon": "^1.12.1"
-  }
+    "file-system": "^2.2.2",
+    "nodemon": "^1.12.1",
+    "pixelmatch": "^4.0.2",
+    "pngjs": "^3.3.0"
+  },
+  "devDependencies": {}
 }
