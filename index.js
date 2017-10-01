@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 app.use(cors())
+
 app.use('/staticFigures', utils.staticFigures);
 
 app.use('/chair', utils.stair);
