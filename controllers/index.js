@@ -24,15 +24,9 @@ module.exports = {
 
         test.on('finish', () => {
           fs.readFile('./diff.png', (err, data) => {
-            const img =  Buffer.from(data, 'base64');
 
-            res.writeHead(200, {
-               'Content-Type': 'image/png',
-               'Content-Length': img.length,
-               'percentage': percentage
-            });
-
-            res.end(img);
+            const img =  Buffer.from(data, 'base64').toString('base64');
+            res.send({img, percentage});
           });
         });
     }
@@ -55,15 +49,8 @@ module.exports = {
 
         test.on('finish', () => {
           fs.readFile('./diff.png', (err, data) => {
-            const img =  Buffer.from(data, 'base64');
-
-            res.writeHead(200, {
-               'Content-Type': 'image/png',
-               'Content-Length': img.length,
-               'percentage': percentage
-            });
-
-            res.end(img);
+            const img =  Buffer.from(data, 'base64').toString('base64');
+            res.send({img, percentage});
           });
         });
     }
@@ -89,15 +76,8 @@ module.exports = {
 
         test.on('finish', () => {
           fs.readFile('./diff.png', (err, data) => {
-            const img =  Buffer.from(data, 'base64');
-
-            res.writeHead(200, {
-               'Content-Type': 'image/png',
-               'Content-Length': img.length,
-               'percentage': percentage
-            });
-
-            res.end(img);
+            const img =  Buffer.from(data, 'base64').toString('base64');
+            res.send({img, percentage});
           });
         });
     }
