@@ -1,8 +1,11 @@
 const app = require('express')();
 const port = process.env.PORT || 3000;
-
+const cors = require('cors');
 const utils = require('./controllers/index.js');
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.json());
+app.use(cors())
 app.use('/staticFigures', utils.staticFigures);
 
 app.use('/chair', utils.stair);
@@ -17,4 +20,3 @@ app.listen(port, (err) => {
     console.log(`Listening on port ${port}!`);
   }
 });
-
